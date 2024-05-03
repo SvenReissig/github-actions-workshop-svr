@@ -27,6 +27,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install
         
+      - name: Build dependencies
+        run: pnpm build
+        
       - name: Build artifact
         uses: actions/upload-artifact@v4
         with:
